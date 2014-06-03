@@ -6,6 +6,10 @@
 
 .nav {
   margin-bottom: 32px;
+
+  @media print {
+    display: none;
+  }
 }
 
 .nav ul {
@@ -17,11 +21,6 @@
 
 /* V tisku nezobrazujeme */
 
-@media print {
-  .nav {
-    display: none;
-  }
-}
 
 /* Polozka navigace: zakladna a male displeje */
 
@@ -54,7 +53,7 @@ b .nav-item,
 /* Layout pro siroke dipleje */
 
 .nav li {
-  width: 245px;
+  width: 25%;
   float: left;
   margin: 0;
   padding: 0;
