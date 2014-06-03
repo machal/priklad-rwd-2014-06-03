@@ -5,7 +5,16 @@
 */
 
 .head {
-	background: url('../img/sportsmen_full.png') no-repeat right center;
+	background: url('../img/sportsmen_full.png') no-repeat right top;
+  background-size: contain;
+
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+     background-image: url('../img/sportsmen_full_2x.png');
+  }
+
 }
+
 
 
