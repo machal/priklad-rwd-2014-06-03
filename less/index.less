@@ -1,5 +1,8 @@
 /* Vychozi stylopis */
 
+@small-end:   ~"screen and (max-width: 839px)";
+@large-start: ~"screen and (min-width: 840px)";
+
 /* Zakladni vzhled a typografie  */
 @import 'core/base';
 
@@ -17,4 +20,6 @@
 @import 'ui/table';
 
 /* Layout webu ve sloupeccich */
-@import 'ui/layout' screen;
+@media @large-start {
+  @import 'ui/layout';
+}
