@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="lib/fancybox/jquery.fancybox.css">
   <!--[if lte IE 8]><script src="js/respond.js"></script><![endif]-->
+  <script src="js/picturefill.js"></script>
 
   <meta name="viewport" content="width=device-width">
 
@@ -60,7 +61,14 @@
 
       <p class="photo">
         <a class="fancybox" href="img/plzen_1.jpg">
-          <img src="img/plzen_1.jpg" alt="Plzeň" width="540" height="304">
+          <span data-picture data-alt="Plzeň">
+          <span data-src="img/plzen_1_small.jpg"></span>
+          <span data-src="img/plzen_1.jpg" data-media="(min-width: 481px)"></span>
+          <noscript>
+              <img src="img/plzen_1_small.jpg" alt="Plzeň">
+          </noscript>
+    </span>
+
         </a>
       </p>
 
